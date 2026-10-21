@@ -16,28 +16,26 @@ All edits below were applied to the mirrored HTML. To change the live site, appl
 | `AW-16881895258/REPLACE_WITH_*_LABEL` (commented out) | tracking script `#cp-track`, only if you want Ads conversion labels |
 | Social links (FB/IG/TT) are still `href="#"` | footer |
 
-## Products to review (NOT unpublished — your call)
+## Removed from the site (prescription / injectable)
 
-Likely require a prescription in Mexico, or are injectable/borderline. Confirm with your Responsable Sanitario against COFEPRIS classification:
+Products removed from the mirror (pages, shop and category cards, home carousel, feeds, sitemap, images):
+`losec-a-omeprazole-20-mg-14-capsules`, `durater-famotidine-20-mg-20-tablets`, `vitamin-b12-energy-shot-tribedoce-injectable-complex-with-b1-b6-b12-3-ampoules`.
+In WordPress: move these three products to Trash (Products → All Products) and re-save permalinks.
 
-- `losec-a-omeprazole-20-mg-14-capsules` — omeprazole 20 mg (Rx brand in Mexico)
-- `durater-famotidine-20-mg-20-tablets` — famotidine 20 mg
-- `vitamin-b12-energy-shot-tribedoce-injectable-complex-with-b1-b6-b12-3-ampoules` — injectable
-- `aspirina-protect-bayer-100-mg-28-tablets` — daily cardio-prevention dosing, "under medical guidance"
-- `analgen-naproxen-sodium-220-mg-20-tablets`, `diclofenac-2-32-topical-gel-100-g-tube-generic-for-voltaren`, `afrin-original-nasal-decongestant-spray-20-ml` — usually OTC, verify the presentation sold
-- `natural-sleeping-patch-non-addictive-12-hour-rest-support-everyday-lab` — health claims ("sleep support"), check allowed wording
-- Kits (`cold-flu-recovery-pack`, `hangover-helper-kit`, `first-aid-travel-kit`) — check their contents.
+Still to verify with your Responsable Sanitario (kept on the site):
+`aspirina-protect-bayer-100-mg-28-tablets`, `analgen-naproxen-sodium-220-mg-20-tablets`, `diclofenac-2-32-topical-gel-100-g-tube-generic-for-voltaren`, `afrin-original-nasal-decongestant-spray-20-ml`,
+`natural-sleeping-patch-non-addictive-12-hour-rest-support-everyday-lab` (health claims) and the kits `cold-flu-recovery-pack`, `hangover-helper-kit`, `first-aid-travel-kit` (check contents).
 
-## Blog posts that still advertise prescriptions (biggest remaining risk)
+## Blog posts removed (they advertised prescriptions)
 
-These articles say Cabo Pharmacy delivers or fills prescriptions. They were not rewritten automatically; unpublish or rewrite them before submitting ads:
+Removed from the mirror, with links, feeds and sitemap entries cleaned up:
 `pharmacy-hours-medicine-access-cabo-san-lucas`, `pharmacy-delivery-cabo-san-lucas-8`, `urgent-care-pharmacy-san-jose-del-cabo`,
 `pharmacy-delivery-cabo-san-lucas-7`, `pharmacy-delivery-cabo-san-lucas-4`, `essential-health-products-los-cabos`,
 `finding-pharmacy-locations-la-paz`, `essential-medicines-travelers-cabo-san-lucas`, `pharmacy-hours-san-jose-del-cabo`,
 `cabo-pharmacy-delivery-2`, `pharmacy-cabo-san-lucas-2`, `cmc-pharmacy-cabo-san-lucas-2`,
 `best-medications-for-travelers-visiting-los-cabos`, `travel-health-kits-san-jose-del-cabo`
-(and any post titled "Fast Prescription Delivery in Los Cabos").
-Several also link to the old brand domain `pharmacyincabo.com`.
+(plus the crawler's search-results and duplicate cart pages). In WordPress: trash these posts, and add 301 redirects to `/shop/` (Yoast Premium or the Redirection plugin).
+Other posts may still mention pharmacies "open late" or other-pharmacy hours; review the remaining ~10 articles before submitting ads.
 
 ## redirect pharmacycabo.com → https://www.cabopharmacy.com/
 
