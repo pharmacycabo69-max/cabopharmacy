@@ -11,8 +11,6 @@ All edits below were applied to the mirrored HTML. To change the live site, appl
 | `[RAZÓN SOCIAL]` | footer (all pages), /about/, /privacy-policy/, /terms-of-service/, home JSON-LD `legalName` |
 | `[DIRECCIÓN FÍSICA COMPLETA]` | footer, /about/, home JSON-LD `streetAddress` |
 | `[NÚMERO DE LICENCIA / AVISO]` (COFEPRIS Licencia Sanitaria / Aviso de Funcionamiento) | footer, /about/ |
-| `[NOMBRE]` Responsable Sanitario | footer, /about/ |
-| `[NÚMERO DE CÉDULA]` cédula profesional | footer, /about/ |
 | `AW-16881895258/REPLACE_WITH_*_LABEL` (commented out) | tracking script `#cp-track`, only if you want Ads conversion labels |
 | Social links (FB/IG/TT) are still `href="#"` | footer |
 
