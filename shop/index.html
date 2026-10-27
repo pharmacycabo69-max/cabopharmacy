@@ -750,6 +750,40 @@ a.cp-cta-call i,a.cp-cta-wa i{margin-right:8px}
 .pic-licensed--page p{margin:0 0 6px}
 .cp-otc-notice{margin:12px 0 18px;padding:12px 16px;border-left:4px solid #2F80ED;background:#eef5ff;color:#0E2A47;font-size:15px;line-height:1.5;border-radius:6px}
 </style>
+<style id="cp-claims-css">
+.cp-claims{max-width:1200px;margin:28px auto;padding:0 16px;box-sizing:border-box}
+.cp-claims__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cp-claim{display:flex;align-items:center;gap:14px;padding:18px 20px;background:#fff;border:1px solid #dbe5ee;border-radius:14px;box-shadow:0 4px 14px rgba(14,42,71,.06)}
+.cp-claim__ico{flex:0 0 52px;height:52px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(340deg,#2F80ED 20%,#56CCF2 100%);color:#fff}
+.cp-claim p{margin:0;font-size:16px;font-weight:600;line-height:1.35;color:#0E2A47}
+.cp-claims__legal{margin:12px 0 0;font-size:12.5px;line-height:1.5;color:#5b6b7c;text-align:center}
+@media(max-width:768px){.cp-claims__grid{grid-template-columns:1fr}}
+.cp-page{max-width:980px;margin:0 auto}
+.cp-page .cp-lead{font-size:18px;line-height:1.6;color:#0E2A47}
+.cp-steps{list-style:none;margin:16px 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+.cp-steps li{counter-increment:s;position:relative;padding:22px 18px 18px;border:1px solid #dbe5ee;border-radius:14px;background:#f4f8fb;font-weight:600;color:#0E2A47}
+.cp-steps li:before{content:counter(s);display:flex;width:30px;height:30px;border-radius:50%;background:#2F80ED;color:#fff;align-items:center;justify-content:center;margin-bottom:10px;font-size:15px}
+@media(max-width:768px){.cp-steps{grid-template-columns:1fr}}
+.cp-zones{width:100%;border-collapse:collapse;margin:12px 0}
+.cp-zones th,.cp-zones td{padding:12px 14px;border-bottom:1px solid #dbe5ee;text-align:left}
+.cp-zones th{background:#f4f8fb;color:#0E2A47}
+.cp-cats{columns:2;column-gap:32px;padding-left:20px}
+.cp-pay{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}
+.cp-pay li{padding:8px 14px;border:1px solid #dbe5ee;border-radius:999px;background:#fff;font-size:14px;font-weight:600;color:#0E2A47}
+.cp-faq h3{margin:22px 0 6px}
+.cp-faq p{margin:0}
+.cp-ctabox{margin:32px 0;padding:28px;border-radius:18px;background:#0E2A47;color:#fff;text-align:center}
+.cp-ctabox h2{color:#fff;margin:0 0 8px}
+.cp-ctabox p{color:#e8f1fa}
+.cp-ctabox .cp-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:16px}
+.cp-btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 28px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none}
+.cp-btn--wa{background:#25D366;color:#fff}
+.cp-btn--wa:hover{background:#1ebe5b;color:#fff}
+.cp-btn--call{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.85)}
+.cp-btn--call:hover{background:rgba(255,255,255,.15);color:#fff}
+.cp-legal-foot{margin:24px 0 0;padding:14px 16px;border-left:4px solid #2F80ED;background:#eef5ff;color:#0E2A47;font-size:14px;line-height:1.5;border-radius:6px}
+@media(max-width:768px){.cp-cats{columns:1}}
+</style>
 </head>
 
 <body class="archive post-type-archive post-type-archive-product wp-custom-logo wp-embed-responsive wp-theme-twentytwentyfive theme-twentytwentyfive woocommerce-shop woocommerce woocommerce-page woocommerce-uses-block-theme woocommerce-block-theme-has-button-styles woocommerce-no-js jkit-color-scheme elementor-default elementor-kit-13">
@@ -1009,7 +1043,7 @@ a.cp-cta-call i,a.cp-cta-wa i{margin-right:8px}
 											</a>
 									</li>
 <li class="elementor-icon-list-item elementor-inline-item">
-											<a href="/delivery/"></p>
+											<a href="/pharmacy-delivery/"></p>
 <p>											<span class="elementor-icon-list-text">Delivery</span><br />
 											</a>
 									</li>
@@ -1075,6 +1109,14 @@ a.cp-cta-call i,a.cp-cta-wa i{margin-right:8px}
 
 <h1 class="alignwide wp-block-query-title">Shop</h1>
 <p class="cp-otc-notice" role="note">Over-the-counter products only. Prescription medication is not available through this store.</p>
+<section class="cp-claims" aria-label="Why order from Cabo Pharmacy">
+<div class="cp-claims__grid">
+<div class="cp-claim"><span class="cp-claim__ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/><path d="M9.5 14.5l1.8 1.8 3.2-3.6"/></svg></span><p>No minimum order</p></div>
+<div class="cp-claim"><span class="cp-claim__ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><p>Delivered in under 60 minutes to hotels, villas and yachts</p></div>
+<div class="cp-claim"><span class="cp-claim__ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M12 9v6M9 12h6"/></svg></span><p>Licensed pharmacy with a real pharmacist in Cabo San Lucas</p></div>
+</div>
+<p class="cp-claims__legal">We deliver over-the-counter products only. We do not provide prescriptions, diagnosis or medical advice. For emergencies call 911 or your property&#8217;s medical team.</p>
+</section>
 
 
 
@@ -4291,6 +4333,7 @@ a.cp-cta-call i,a.cp-cta-wa i{margin-right:8px}
 <ul>
 <li><a href="/about/"  data-page="about">About Us</a></li>
 <li><a href="/contact/"  data-page="contact">Contact</a></li>
+<li><a href="/pharmacy-delivery/" data-page="pharmacy-delivery">Pharmacy Delivery</a></li>
 <li><a href="/delivery/"  data-page="delivery">Delivery &amp; Shipping</a></li>
 <li><a href="/returns-refunds/" data-page="returns">Returns &amp; Refunds</a></li>
 <li><a href="/faq/"  data-page="faq">FAQ</a></li>
@@ -4576,7 +4619,7 @@ body.pic-drawer-open{overflow:hidden}
     <ul class="pic-d-menu-list">
       <li><a href="/">Home</a></li>
       <li><a href="/about/">About Us</a></li>
-      <li><a href="/delivery/">Delivery &amp; Shipping</a></li>
+      <li><a href="/pharmacy-delivery/">Delivery</a></li> <li><a href="/delivery/">Delivery &amp; Shipping</a></li>
       <li><a href="/contact/">Contact Us</a></li>
       <li><a href="/faq/">FAQ</a></li>
       <li><a href="/my-account/">My Account</a></li>

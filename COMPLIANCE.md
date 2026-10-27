@@ -74,3 +74,11 @@ Other posts may still mention pharmacies "open late" or other-pharmacy hours; re
 5. **Schema** — remove the two custom `application/ld+json` blocks (search snippets / theme / Elementor HTML widgets for `Prescription Fulfillment`) and add the `Pharmacy` block from the home `<head>` (`#cp-pharmacy-schema`) via WPCode (home only).
 6. **Tracking** — the Google tag (`AW-16881895258`) is already installed. Add the `#cp-track` script from any page here via WPCode (site-wide footer). In Google Ads create conversions from the events `whatsapp_click`, `phone_click`, `sms_click` (or import them from GA4).
 7. **Sitemap/robots** — Yoast already serves `sitemap_index.xml`; set WordPress Address and Site Address (Settings → General) to `https://www.cabopharmacy.com` so sitemap and robots use https + www (today they emit `http://cabopharmacy.com/...`).
+
+## Delivery campaign (Google Ads) — /pharmacy-delivery/
+
+- New page `pharmacy-delivery/index.html` (title, meta description, H1, claims, steps, zones, categories, payment, 5 FAQs + FAQPage JSON-LD, WhatsApp/call CTA, legal notice). Added to the main menu ("Delivery"), the mobile drawer, the footer and `sitemap.xml`.
+- Claims block (`.cp-claims`) added under the home hero and above the product grid on `/shop/` (and `/shop/page/2/`).
+- Delivery times on product pages, `/delivery/` and `/faq/` were aligned to the new zone times; the minimum-order answers were changed to "no minimum order".
+- In WordPress: create a page with slug `pharmacy-delivery` (paste the content of `.cp-page`), set the Yoast title/description from the `<head>`, add it to Appearance → Menus as "Delivery", and add the claims block to the home (Elementor HTML widget under the hero) and to the Product Catalog template. Existing `whatsapp_click` / `phone_click` tracking (`#cp-track`) covers the new page automatically.
+- Assumptions to confirm: card payment on delivery, "real pharmacist" and "under 60 minutes" claims, no minimum order and the category link `/product-category/antacids-digestive/` (not included in this mirror).
