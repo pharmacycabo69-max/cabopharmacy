@@ -616,67 +616,132 @@
       "statusCode": 301
     },
     {
-      "source": "/product-category/antacids-digestive/:path*",
+      "source": "/product-category/antacids-digestive/(.*)",
       "destination": "https://www.rmcpharmacy.com/pharmacy/stomach-and-digestion",
       "statusCode": 301
     },
     {
-      "source": "/product-category/baby-care/:path*",
+      "source": "/product-category/antacids-digestive",
+      "destination": "https://www.rmcpharmacy.com/pharmacy/stomach-and-digestion",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/baby-care/(.*)",
       "destination": "https://www.rmcpharmacy.com/pharmacy/baby-and-family",
       "statusCode": 301
     },
     {
-      "source": "/product-category/bundles/:path*",
+      "source": "/product-category/baby-care",
+      "destination": "https://www.rmcpharmacy.com/pharmacy/baby-and-family",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/bundles/(.*)",
       "destination": "https://www.rmcpharmacy.com/pharmacy/travel-basics",
       "statusCode": 301
     },
     {
-      "source": "/product-category/cold-flu/:path*",
+      "source": "/product-category/bundles",
+      "destination": "https://www.rmcpharmacy.com/pharmacy/travel-basics",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/cold-flu/(.*)",
       "destination": "https://www.rmcpharmacy.com/pharmacy/cold-and-flu",
       "statusCode": 301
     },
     {
-      "source": "/product-category/dental-care/:path*",
+      "source": "/product-category/cold-flu",
+      "destination": "https://www.rmcpharmacy.com/pharmacy/cold-and-flu",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/dental-care/(.*)",
       "destination": "https://www.rmcpharmacy.com/pharmacy/personal-care",
       "statusCode": 301
     },
     {
-      "source": "/product-category/eye-care/:path*",
+      "source": "/product-category/dental-care",
       "destination": "https://www.rmcpharmacy.com/pharmacy/personal-care",
       "statusCode": 301
     },
     {
-      "source": "/product-category/first-aid/:path*",
+      "source": "/product-category/eye-care/(.*)",
+      "destination": "https://www.rmcpharmacy.com/pharmacy/personal-care",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/eye-care",
+      "destination": "https://www.rmcpharmacy.com/pharmacy/personal-care",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/first-aid/(.*)",
       "destination": "https://www.rmcpharmacy.com/pharmacy/first-aid",
       "statusCode": 301
     },
     {
-      "source": "/product-category/pain-relief/:path*",
+      "source": "/product-category/first-aid",
+      "destination": "https://www.rmcpharmacy.com/pharmacy/first-aid",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/pain-relief/(.*)",
       "destination": "https://www.rmcpharmacy.com/pharmacy/pain-and-fever",
       "statusCode": 301
     },
     {
-      "source": "/product-category/skin-care/:path*",
+      "source": "/product-category/pain-relief",
+      "destination": "https://www.rmcpharmacy.com/pharmacy/pain-and-fever",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/skin-care/(.*)",
       "destination": "https://www.rmcpharmacy.com/pharmacy/personal-care",
       "statusCode": 301
     },
     {
-      "source": "/product-category/sun-care/:path*",
+      "source": "/product-category/skin-care",
+      "destination": "https://www.rmcpharmacy.com/pharmacy/personal-care",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/sun-care/(.*)",
       "destination": "https://www.rmcpharmacy.com/pharmacy/sun-care",
       "statusCode": 301
     },
     {
-      "source": "/product-category/thermometers-monitoring/:path*",
+      "source": "/product-category/sun-care",
+      "destination": "https://www.rmcpharmacy.com/pharmacy/sun-care",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/thermometers-monitoring/(.*)",
       "destination": "https://www.rmcpharmacy.com/pharmacy/first-aid",
       "statusCode": 301
     },
     {
-      "source": "/product-category/vitamins-supplements/:path*",
+      "source": "/product-category/thermometers-monitoring",
+      "destination": "https://www.rmcpharmacy.com/pharmacy/first-aid",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/vitamins-supplements/(.*)",
       "destination": "https://www.rmcpharmacy.com/pharmacy",
       "statusCode": 301
     },
     {
-      "source": "/product-category/uncategorized/:path*",
+      "source": "/product-category/vitamins-supplements",
+      "destination": "https://www.rmcpharmacy.com/pharmacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/uncategorized/(.*)",
+      "destination": "https://www.rmcpharmacy.com/shop",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/uncategorized",
       "destination": "https://www.rmcpharmacy.com/shop",
       "statusCode": 301
     },
