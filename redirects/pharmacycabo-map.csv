@@ -1,0 +1,16 @@
+url_vieja,destino,regla
+https://www.pharmacycabo.com/en/,https://www.rmcpharmacy.com/,explicit
+https://www.pharmacycabo.com/en/delivery/,https://www.rmcpharmacy.com/delivery,explicit
+https://www.pharmacycabo.com/en/doctor-visit/,https://www.rmcpharmacy.com/services/doctor-consultation,explicit
+https://www.pharmacycabo.com/en/iv-therapy/,https://www.rmcpharmacy.com/services/iv-therapy,explicit
+https://www.pharmacycabo.com/en/legal/,https://www.rmcpharmacy.com/,explicit
+https://www.pharmacycabo.com/en/products/,https://www.rmcpharmacy.com/pharmacy,explicit
+https://www.pharmacycabo.com/en/video-consultation/,https://www.rmcpharmacy.com/services/doctor-consultation,explicit
+https://www.pharmacycabo.com/es/,https://www.rmcpharmacy.com/es,explicit
+https://www.pharmacycabo.com/es/entrega/,https://www.rmcpharmacy.com/es/entrega,explicit
+https://www.pharmacycabo.com/es/consulta-medica/,https://www.rmcpharmacy.com/es/servicios/consulta-medica,explicit
+https://www.pharmacycabo.com/es/sueroterapia/,https://www.rmcpharmacy.com/es/servicios/terapia-iv,explicit
+https://www.pharmacycabo.com/es/videoconsulta/,https://www.rmcpharmacy.com/es/servicios/consulta-medica,explicit
+https://www.pharmacycabo.com/es/products/,https://www.rmcpharmacy.com/es/farmacia,explicit
+https://www.pharmacycabo.com/es/legal/,https://www.rmcpharmacy.com/es,explicit
+https://www.pharmacycabo.com/products/,https://www.rmcpharmacy.com/pharmacy,explicit
