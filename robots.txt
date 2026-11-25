@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Old URLs 301 to https://www.rmcpharmacy.com. Nothing is blocked so crawlers can see every redirect.
+Sitemap: https://www.cabopharmacy.com/sitemap.xml
