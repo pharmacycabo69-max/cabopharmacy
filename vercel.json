@@ -6,6 +6,171 @@
       "statusCode": 301
     },
     {
+      "source": "/es/",
+      "destination": "https://www.rmcpharmacy.com/es",
+      "statusCode": 301
+    },
+    {
+      "source": "/es",
+      "destination": "https://www.rmcpharmacy.com/es",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/(.*)",
+      "destination": "https://www.rmcpharmacy.com/es",
+      "statusCode": 301
+    },
+    {
+      "source": "/product/colgate-sensitive-pro-relief-original-toothpaste-30-g/",
+      "destination": "https://www.rmcpharmacy.com/shop/toothpaste-colgate-sensitive-pro-relief-inmediato-original-30-g-4714",
+      "statusCode": 301
+    },
+    {
+      "source": "/product/colgate-sensitive-pro-relief-original-toothpaste-30-g",
+      "destination": "https://www.rmcpharmacy.com/shop/toothpaste-colgate-sensitive-pro-relief-inmediato-original-30-g-4714",
+      "statusCode": 301
+    },
+    {
+      "source": "/product/colgate-sensitive-pro-relief-toothpaste-20-ml/",
+      "destination": "https://www.rmcpharmacy.com/shop/toothpaste-colgate-sensitive-pro-relief-20-ml-tube-1851",
+      "statusCode": 301
+    },
+    {
+      "source": "/product/colgate-sensitive-pro-relief-toothpaste-20-ml",
+      "destination": "https://www.rmcpharmacy.com/shop/toothpaste-colgate-sensitive-pro-relief-20-ml-tube-1851",
+      "statusCode": 301
+    },
+    {
+      "source": "/best-medications-for-travelers-visiting-los-cabos/feed/",
+      "destination": "https://www.rmcpharmacy.com/pharmacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/best-medications-for-travelers-visiting-los-cabos/feed",
+      "destination": "https://www.rmcpharmacy.com/pharmacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/essential-health-products-los-cabos/feed/",
+      "destination": "https://www.rmcpharmacy.com/pharmacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/essential-health-products-los-cabos/feed",
+      "destination": "https://www.rmcpharmacy.com/pharmacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/essential-medicines-travelers-cabo-san-lucas/feed/",
+      "destination": "https://www.rmcpharmacy.com/pharmacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/essential-medicines-travelers-cabo-san-lucas/feed",
+      "destination": "https://www.rmcpharmacy.com/pharmacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/finding-pharmacy-locations-la-paz/feed/",
+      "destination": "https://www.rmcpharmacy.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/finding-pharmacy-locations-la-paz/feed",
+      "destination": "https://www.rmcpharmacy.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/first-aid-kits-travelers-cabo-san-lucas/feed/",
+      "destination": "https://www.rmcpharmacy.com/blog/cabo-travel-first-aid-kit",
+      "statusCode": 301
+    },
+    {
+      "source": "/first-aid-kits-travelers-cabo-san-lucas/feed",
+      "destination": "https://www.rmcpharmacy.com/blog/cabo-travel-first-aid-kit",
+      "statusCode": 301
+    },
+    {
+      "source": "/guide-over-the-counter-medicines-los-cabos/feed/",
+      "destination": "https://www.rmcpharmacy.com/pharmacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/guide-over-the-counter-medicines-los-cabos/feed",
+      "destination": "https://www.rmcpharmacy.com/pharmacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/otc-products-la-paz/feed/",
+      "destination": "https://www.rmcpharmacy.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/otc-products-la-paz/feed",
+      "destination": "https://www.rmcpharmacy.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/pharmacy-hours-medicine-access-cabo-san-lucas/feed/",
+      "destination": "https://www.rmcpharmacy.com/locations",
+      "statusCode": 301
+    },
+    {
+      "source": "/pharmacy-hours-medicine-access-cabo-san-lucas/feed",
+      "destination": "https://www.rmcpharmacy.com/locations",
+      "statusCode": 301
+    },
+    {
+      "source": "/pharmacy-hours-san-jose-del-cabo/feed/",
+      "destination": "https://www.rmcpharmacy.com/delivery/centro-san-jose",
+      "statusCode": 301
+    },
+    {
+      "source": "/pharmacy-hours-san-jose-del-cabo/feed",
+      "destination": "https://www.rmcpharmacy.com/delivery/centro-san-jose",
+      "statusCode": 301
+    },
+    {
+      "source": "/top-rated-pharmacies-la-paz/feed/",
+      "destination": "https://www.rmcpharmacy.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/top-rated-pharmacies-la-paz/feed",
+      "destination": "https://www.rmcpharmacy.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/top-wellness-products-cabo-san-lucas/feed/",
+      "destination": "https://www.rmcpharmacy.com/pharmacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/top-wellness-products-cabo-san-lucas/feed",
+      "destination": "https://www.rmcpharmacy.com/pharmacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/travel-health-kits-san-jose-del-cabo/feed/",
+      "destination": "https://www.rmcpharmacy.com/blog/cabo-travel-first-aid-kit",
+      "statusCode": 301
+    },
+    {
+      "source": "/travel-health-kits-san-jose-del-cabo/feed",
+      "destination": "https://www.rmcpharmacy.com/blog/cabo-travel-first-aid-kit",
+      "statusCode": 301
+    },
+    {
+      "source": "/urgent-care-pharmacy-san-jose-del-cabo/feed/",
+      "destination": "https://www.rmcpharmacy.com/delivery/centro-san-jose",
+      "statusCode": 301
+    },
+    {
+      "source": "/urgent-care-pharmacy-san-jose-del-cabo/feed",
+      "destination": "https://www.rmcpharmacy.com/delivery/centro-san-jose",
+      "statusCode": 301
+    },
+    {
       "source": "/24-7-pharmacy-delivery-cabo-san-lucas-2/",
       "destination": "https://www.rmcpharmacy.com/delivery",
       "statusCode": 301
