@@ -6,3 +6,4 @@ Origen: auditoría de redirecciones de cabopharmacy.com y pharmacycabo.com. No s
 2. **Google Ads:** `AW-16881895258` no aparece en el HTML ni en GTM-P4G2TNKX. Confirmar en Ads qué cuenta y conversiones están activas.
 3. **Destinos usados por las redirecciones** (no cambiar sus URLs sin avisar): ver `DESTINATION_HEALTH.csv`. Incluyen dos fichas de producto: `/shop/toothpaste-colgate-sensitive-pro-relief-inmediato-original-30-g-4714` y `/shop/toothpaste-colgate-sensitive-pro-relief-20-ml-tube-1851`.
 4. Las URLs de los destinos respondieron 200, con canonical propio y sin `noindex`.
+5. **Revisar el firewall de Vercel (H14):** tras la auditoría, curl recibió 403 con `X-Vercel-Mitigated: challenge` y en una carga móvil el logotipo salió roto. Probable efecto del volumen de pruebas; confirmar que no afecte a visitantes ni a buscadores.

@@ -12,7 +12,8 @@ No se creó sitio, catálogo, checkout ni landings. Nada de esta rama está en p
 | Parámetros de atribución | Probada | utm_*, gclid, gbraid, wbraid, fbclid, msclkid se conservan |
 | DNS | Probada (lectura) | NS de Vercel en ambos; TXT `google-site-verification` presente en ambos |
 | Destinos en RMC (status, canonical, idioma, noindex) | Probada | `DESTINATION_HEALTH.csv`: 200, canonical propio, sin noindex |
-| Móvil, escritorio, AdsBot, Googlebot | Probada | mismo 301 y destino; capturas en `capturas/` |
+| Móvil, escritorio, AdsBot, Googlebot | Probada por agente de usuario | mismo 301 y destino; 2 capturas del destino actual (móvil y escritorio) de `cabopharmacy.com/delivery/`. No hay capturas "después": los cambios son de reglas, no visuales, y la vista previa exige sesión de Vercel |
+| Prueba de las reglas nuevas | Probada en simulador; **pendiente en vivo** | el simulador reproduce producción en las 526 rutas; cambian solo las 15 de `changed.csv`, con destino 200. La vista previa está protegida (302 a inicio de sesión) |
 | Mejoras reversibles (reglas y robots) | Implementada en rama, pendiente de aprobación | `changed.csv`: 15 destinos |
 | Search Console (90 días y 12 meses) | **Bloqueada** | sin sesión de Google en el navegador |
 | Google Ads (campañas, URLs finales, conversiones) | **Bloqueada** | sin sesión de Google |
@@ -30,7 +31,7 @@ No se creó sitio, catálogo, checkout ni landings. Nada de esta rama está en p
 | `http://<dominio>/ruta` | 3 | 308 → https · 308 → www · 301 → RMC |
 | `/ruta//` (doble diagonal) | 2 | 308 · 301 |
 
-Sin bucles, sin errores y sin redirecciones temporales (302/307) en ningún caso.
+Medido antes de que RMC empezara a responder con desafío (ver H14). Sin bucles, sin errores y sin redirecciones temporales (302/307) en ningún caso.
 El error reportado en `pharmacycabo.com/es/` **no se reproduce**: 308 → 301 → `rmcpharmacy.com/es` (200).
 
 ## 3. Matriz de hallazgos
@@ -50,6 +51,7 @@ El error reportado en `pharmacycabo.com/es/` **no se reproduce**: 308 → 301 �
 | H11 | Baja | `pharmacycabo.com`: sitemap y robots anuncian URLs sin www (un salto extra) | Cambiar en su repositorio | Propuesto (otro repositorio, no se tocó) |
 | H12 | Info | El meta de verificación de la portada vieja ya no se sirve; la verificación por DNS sigue presente | Confirmar en Search Console que ambas propiedades de dominio siguen verificadas | Pendiente |
 | H13 | Info | El repositorio `cabopharmacy` es público e incluye el respaldo de productos y la nota de cumplimiento | Considerar hacerlo privado | Propuesto |
+| H14 | **Alta, verificar** | Al terminar las pruebas, `rmcpharmacy.com` respondió 403 con `X-Vercel-Mitigated: challenge` a curl. El navegador pasó la verificación solo, y en esa carga móvil el logotipo apareció roto. Es probable que lo activaran las más de 1,000 solicitudes seguidas de esta auditoría, pero también puede ser un modo de desafío activado en Vercel | Revisar Vercel → rmcpharmacy → Firewall; confirmar que no esté en Attack Challenge Mode y probar desde un teléfono. Ejecutar `audit.mjs` espaciado | Pendiente |
 
 `sitemap.xml` (94 URLs viejas, todas con regla) se conserva a propósito: ayuda a que los buscadores recorran los 301.
 Revisar en Search Console y retirarlo cuando las URLs viejas dejen de aparecer (no antes de 3 a 6 meses).

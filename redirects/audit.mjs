@@ -73,8 +73,8 @@ async function trace(c) {
 
 const results = new Array(cases.length);
 let next = 0;
-await Promise.all(Array.from({ length: 8 }, async () => {
-  while (next < cases.length) { const i = next++; results[i] = await trace(cases[i]); }
+await Promise.all(Array.from({ length: Number(process.env.CONCURRENCY ?? 2) }, async () => {
+  while (next < cases.length) { const i = next++; results[i] = await trace(cases[i]); await new Promise((r) => setTimeout(r, 150)); }
 }));
 
 const q = (v) => (/[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
